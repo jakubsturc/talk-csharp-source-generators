@@ -33,7 +33,7 @@ _by Jakub Šturc_
 * This is 2 weeks old preview
   * Tooling is not ready yet
   * Things will change
-  * Not 1.0 quality
+  * Do not expect 1.0 quality
 * I am not expert
 
 ---
@@ -63,9 +63,12 @@ Roslyn Analyzer that can emit C# source code during compilation.
 
 --
 
+### We saw ...
+
 * Intellisense
-* Debug
 * Disassembly
+* Debug generated code
+* Debug generator
 
 ---
 
@@ -91,14 +94,6 @@ Roslyn Analyzer that can emit C# source code during compilation.
 * T4 can generate any file (not just C#)
 * T4 depends on Visual Studio & Windows
 * Source Generators runs inside compiler
-
----
-
-## Research Topics 🔬
-
-* Reflecting generated code
-* Debugging generated code
-* Applying generators recursively
 
 ---
 
