@@ -22,8 +22,9 @@ _by Jakub Šturc_
 ## About me 🤓
 
 * Principal SW Developer @ ERNI
-* Doing .NET for almost 20 years
+* Doing .NET almost half of my life
 * Father of 👧👦👶
+* @jakubsturc, https://jakub.sturc.eu
 
 ---
 
@@ -59,6 +60,12 @@ Roslyn Analyzer that can emit C# source code during compilation.
 ---
 
 ## Demo 👨‍💻
+
+--
+
+* Intellisense
+* Debug
+* Disassembly
 
 ---
 

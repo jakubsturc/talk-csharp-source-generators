@@ -1,9 +1,10 @@
-﻿using System.Text;
-
+﻿using System;
+using System.Collections.Generic;
+using System.Text;
 using Microsoft.CodeAnalysis;
 using Microsoft.CodeAnalysis.Text;
 
-namespace JakubSturc.Demo.CodeGenerators
+namespace SourceGeneratorSamples
 {
     [Generator]
     public class HelloWorldGenerator : ISourceGenerator
@@ -11,7 +12,7 @@ namespace JakubSturc.Demo.CodeGenerators
         public void Execute(SourceGeneratorContext context)
         {
             // begin creating the source we'll inject into the users compilation
-            var sourceBuilder = new StringBuilder(@"
+            StringBuilder sourceBuilder = new StringBuilder(@"
 using System;
 namespace HelloWorldGenerated
 {
@@ -24,7 +25,7 @@ namespace HelloWorldGenerated
 ");
 
             // using the context, get a list of syntax trees in the users compilation
-            var syntaxTrees = context.Compilation.SyntaxTrees;
+            IEnumerable<SyntaxTree> syntaxTrees = context.Compilation.SyntaxTrees;
 
             // add the filepath of each tree to the class we're building
             foreach (SyntaxTree tree in syntaxTrees)
@@ -39,12 +40,12 @@ namespace HelloWorldGenerated
 }");
 
             // inject the created source into the users compilation
-            context.AddSource("helloWorldGenerator", SourceText.From(sourceBuilder.ToString(), Encoding.UTF8));
+            context.AddSource("helloWorldGenerated", SourceText.From(sourceBuilder.ToString(), Encoding.UTF8));
         }
 
         public void Initialize(InitializationContext context)
         {
-            // nothing here
+            // No initialization required
         }
     }
 }
