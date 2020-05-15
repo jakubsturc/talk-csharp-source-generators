@@ -122,6 +122,8 @@ note: It's dirty trick. Do not use it in production.
 * [Introducing C# Source Generators](https://devblogs.microsoft.com/dotnet/introducing-c-source-generators/)
 * [Source Generators Cookbook](https://github.com/dotnet/roslyn/blob/master/docs/features/source-generators.cookbook.md)
 
+note: You can find this talk on my github account.
+
 ---
 
 ## Questions 🤔
