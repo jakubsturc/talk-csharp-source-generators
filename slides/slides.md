@@ -28,6 +28,16 @@ _by Jakub Šturc_
 
 ---
 
+## What is a Source Generator
+
+Roslyn Analyzer that can emit C# source code during compilation.
+
+--
+
+![Source Generator](slides/source-generator.png)
+
+---
+
 ## Disclaimer ⚠
 
 * This is 2 weeks old preview
@@ -49,21 +59,23 @@ VS won't be required in a future versions
 
 ---
 
-## What is a Source Generator
+## Demo 1 👨‍💻
 
-Roslyn Analyzer that can emit C# source code during compilation.
+note:
+
+* show hello world
+  * class is not there
+  * intellisense
+* show XmlSettings
+  * add attribute
+  * show intellisense
+  * show how to debug
+* ignore I notify change
+* show Console highjack
 
 --
 
-![Source Generator](slides/source-generator.png)
-
----
-
-## Demo 👨‍💻
-
---
-
-### We saw ...
+### We saw ... 👓
 
 * Intellisense
 * Disassembly
@@ -75,8 +87,9 @@ Roslyn Analyzer that can emit C# source code during compilation.
 ## Some good use cases ✅
 
 * Generate C# from non-C# files
-* 
-* 
+* Serialization
+* Automatic interface implementation
+* Class wrapping
 * ... your idea 💡
 
 ---
@@ -85,6 +98,11 @@ Roslyn Analyzer that can emit C# source code during compilation.
 
 * Modify source code
 * Implement a new language feature
+* AOP (really?)
+
+---
+
+## Demo 2 👨‍💻
 
 ---
 
