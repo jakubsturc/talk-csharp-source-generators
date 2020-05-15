@@ -104,6 +104,8 @@ note:
 
 ## Demo 2 👨‍💻
 
+note: It's dirty trick. Do not use it in production.
+
 ---
 
 ## Comparison with T4 ⚖
