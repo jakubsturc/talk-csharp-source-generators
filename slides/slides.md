@@ -34,7 +34,7 @@ Roslyn Analyzer that can emit C# source code during compilation.
 
 --
 
-![Source Generator](slides/source-generator.png)
+![Source Generator](source-generator.png)
 
 ---
 
@@ -61,18 +61,7 @@ VS won't be required in a future versions
 
 ## Demo 1 👨‍💻
 
-note:
-
-* show hello world
-  * class is not there
-  * intellisense
-* show XmlSettings
-  * add attribute
-  * show intellisense
-  * show how to debug
-* ignore I notify change
-* show Console highjack
-
+* Based on Roslyn-SDK samples
 --
 
 ### We saw ... 👓
